@@ -18,7 +18,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     color: var(--gray-2);
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 1rem 2rem 1rem 2rem;
     background-color: #f2f2f2;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 #skills h3 {
-    width: 30%;
+    width: 35%;
     font-weight: 500;
     font-size: 1.6rem;
 }
@@ -90,7 +90,7 @@ body {
 #skills .experience-bar {
     z-index: 1;
     background-color: var(--gray-4);
-    width: 70%;
+    width: 65%;
     height: .8rem;
     border-radius: 1rem;
     position: relative;
@@ -142,4 +142,14 @@ body {
 
 #hobbies span {
     margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    color: #828282;
+}
+
+footer a {
+    font-weight: bold;
+    color: inherit;
 }
