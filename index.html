@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!--Javascript-->
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -32,7 +34,6 @@
                 <p>Self-taught developer, who is willing to learn and create outstanding UI applications. </p>
                 <p>A minimalist who love learning languages.</p>
             </div>
-
         </section>
         <section id="skills">
             <h2>Front end</h2>
@@ -79,9 +80,9 @@
                 <p>"Kolik jazyků umíš, tolikrát jsi člověkem"<br><span>-As many languages you know, as many times you are a human being</span></p>
             </div>
         </section>
-        <section id="projects">
-            <div class="carousel">
-                <div class="card">
+        <section id="projects" data-carousel>
+            <div class="carousel" data-slides>
+                <div class="card" data-active="true">
                     <img src="assets/404-page-screenshot.png" alt="">
                     <div class="tags">
                         <div class="tag">#HTML</div>
@@ -150,10 +151,10 @@
                     <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/checkout-page">Code</a>
                 </div>
                 <div class="card">
-                    <img src="assets/edie-page-screenshot.png " alt=" ">
-                    <div class="tags ">
-                        <div class="tag ">#HTML</div>
-                        <div class="tag ">#CSS</div>
+                    <img src="assets/edie-page-screenshot.png" alt=" ">
+                    <div class="tags">
+                        <div class="tag">#HTML</div>
+                        <div class="tag">#CSS</div>
                         <div class="tag">#Javascript</div>
                     </div>
                     <h2>Edie home page</h2>
@@ -162,9 +163,13 @@
                     <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/edie-home-page">Code</a>
                 </div>
             </div>
+            <span class="material-icons next-btn" data-carousel-button="next">navigate_next</span>
+            <span class="material-icons prev-btn" data-carousel-button="prev">navigate_before</span>
         </section>
     </main>
     <footer>created by <a href="https://github.com/erik-ng-3006 ">erik-ng-3006</a> - devChallenges.io</footer>
+
+
 </body>
 
 </html>
