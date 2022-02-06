@@ -1,264 +1,416 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;700&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-    --gray-1: #333;
-    --gray-2: #4F4F4F;
-    --gray-3: #E0E0E0;
-    --gray-4: #c4c4c4;
-    --blue: #2F80ED;
-    font-size: 62.5%;
+	--gray-1: #333;
+	--gray-2: #4f4f4f;
+	--gray-3: #e0e0e0;
+	--gray-4: #c4c4c4;
+	--blue: #2f80ed;
+	font-size: 62.5%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    color: var(--gray-2);
-    padding: 1rem 2.5rem 1rem 2.5rem;
-    background-color: #f2f2f2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.4rem;
+	color: var(--gray-2);
+	padding: 1rem 2.5rem 1rem 2.5rem;
+	background-color: #f2f2f2;
 }
 
 #about,
 #skills,
+#blogs,
 #hobbies,
+#experiences,
+#project-tags,
 #projects {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1.2rem;
-    margin-bottom: 5rem;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 1.2rem;
+	margin-bottom: 3rem;
 }
 
 #about img {
-    margin-bottom: 3rem;
-    border-radius: 1.2rem;
-    width: 100%;
-    height: auto;
+	margin-bottom: 3rem;
+	border-radius: 1.2rem;
+	width: 100%;
+	height: auto;
 }
 
 #about .intro {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 #about .intro h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
 }
 
 #about .contact {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 #about .contact .material-icons {
-    margin-right: 1rem;
-    vertical-align: middle;
+	margin-right: 1rem;
+	vertical-align: middle;
 }
 
 #about .info {
-    width: 80%;
+	width: 80%;
 }
 
 #about .info p {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 #hobbies h2 {
-    font-size: 2.4rem;
-    font-weight: 300;
-    margin-bottom: 3rem;
+	font-size: 2.4rem;
+	font-weight: 300;
+	margin-bottom: 3rem;
 }
 
 #skills h2 {
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
 }
 
 #skills .row {
-    display: flex;
-    align-items: center;
-    margin-bottom: .5rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
 }
 
 #skills h3 {
-    width: 35%;
-    font-weight: 500;
-    font-size: 1.6rem;
+	width: 35%;
+	font-weight: 500;
+	font-size: 1.6rem;
 }
 
 #skills .experience-bar {
-    z-index: 1;
-    background-color: var(--gray-4);
-    width: 65%;
-    height: .8rem;
-    border-radius: 1rem;
-    position: relative;
+	z-index: 1;
+	background-color: var(--gray-4);
+	width: 65%;
+	height: 0.8rem;
+	border-radius: 1rem;
+	position: relative;
 }
 
 #skills .experience-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--blue);
-    border-radius: 1rem;
-    max-width: 20%;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--blue);
+	border-radius: 1rem;
+	max-width: 20%;
 }
 
 #skills .bar-1::before,
 #skills .bar-5::before {
-    max-width: 30%;
+	max-width: 30%;
 }
 
 #skills .bar-2::before {
-    max-width: 50%;
+	max-width: 50%;
 }
 
 #skills .bar-3::before {
-    max-width: 70%;
+	max-width: 70%;
+}
+
+#blogs h2 {
+	color: var(--gray-3);
+	font-weight: 500;
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+
+#blogs .blog {
+	margin-bottom: 2rem;
+}
+
+#blogs h3 {
+	font-size: 2.4rem;
+	font-weight: 500;
+	color: var(--gray-1);
+	margin-bottom: 1rem;
+}
+#blogs img {
+	width: 100%;
+	height: auto;
+	border-radius: 1.2rem;
+	margin-bottom: 2rem;
+}
+#blogs p {
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+	color: #828282;
+}
+
+#blogs a {
+	text-decoration: none;
+	color: var(--blue);
+	font-size: 1.6rem;
+	margin-top: 1rem;
 }
 
 #hobbies .img {
-    width: 100%;
-    height: auto;
-    border-radius: 1.2rem;
-    margin-bottom: 2rem;
+	width: 100%;
+	height: auto;
+	border-radius: 1.2rem;
+	margin-bottom: 2rem;
 }
 
 #hobbies h3 {
-    color: var(--gray-1);
-    font-weight: 600;
-    margin-bottom: 1rem;
+	color: var(--gray-1);
+	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
-#hobbies>div>p {
-    margin-bottom: 3rem;
-    line-height: 2rem;
-    font-style: italic;
+#hobbies > div > p {
+	margin-bottom: 3rem;
+	line-height: 2rem;
+	font-style: italic;
 }
 
 #hobbies span {
-    margin-top: 2rem;
+	margin-top: 2rem;
+}
+
+#experiences h2 {
+	color: var(--gray-2);
+	font-size: 2.4rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+}
+#experiences .grid-container {
+	display: grid;
+	grid-template-columns: fit-content(100%) 1fr;
+	grid-template-rows: 0.7fr 1fr 1fr;
+	margin-bottom: 5rem;
+}
+#experiences img {
+	grid-row: span 3;
+	margin-right: 2rem;
+}
+
+#experiences h3 {
+	font-weight: 600;
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+}
+#experiences h4 {
+	font-size: 1.4rem;
+	color: #828282;
+	font-weight: 500;
+}
+#experiences p {
+	font-size: 1.6rem;
+	color: #828282;
+}
+
+#project-tags h2 {
+	font-weight: 500;
+	font-size: 1.8rem;
+	color: var(--gray-2);
+	margin-bottom: 1.5rem;
+}
+
+#project-tags a {
+	color: var(--gray-2);
+	font-size: 1.4rem;
+	padding: 0.8rem 2.2rem;
+	border-radius: 1.2rem;
+	background-color: inherit;
+	transition: all 0.3s ease-out;
+	border: 1px solid var(--gray-2);
+	margin-right: 1rem;
+	text-decoration: none;
+}
+
+#project-tags a:hover,
+#project-tags a:focus {
+	color: white;
+	background-color: var(--blue);
+	border: none;
 }
 
 #projects {
-    position: relative;
+	position: relative;
 }
 
 #projects img {
-    height: 400px;
-    width: 100%;
-    border-radius: 1.2rem;
-    margin-bottom: 2.4rem;
-    object-fit: cover;
+	height: 400px;
+	width: 100%;
+	border-radius: 1.2rem;
+	margin-bottom: 2.4rem;
+	object-fit: cover;
 }
 
 #projects .card {
-    z-index: -1;
-    opacity: 0;
-    padding-bottom: 5rem;
-    margin-bottom: 2rem;
-    position: absolute;
-    inset: 0;
+	z-index: -1;
+	opacity: 0;
+	padding-bottom: 5rem;
+	margin-bottom: 2rem;
+	position: absolute;
+	inset: 0;
 }
 
 #projects [data-active] {
-    opacity: 1;
-    position: unset;
-    z-index: 9999;
+	opacity: 1;
+	position: unset;
+	z-index: 9999;
 }
 
 #projects .tags {
-    color: var(--gray-2);
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+	color: var(--gray-2);
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 2rem;
 }
 
 #projects .card h2 {
-    font-size: 2.4rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+	font-size: 2.4rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
 }
 
 #projects .card p {
-    color: #828282;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+	color: #828282;
+	font-size: 1.6rem;
+	margin-bottom: 3rem;
 }
 
 #projects .card .demo-btn {
-    font-size: 1.8rem;
-    background-color: var(--blue);
-    color: white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 1.2rem;
+	font-size: 1.8rem;
+	background-color: var(--blue);
+	color: white;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-radius: 1.2rem;
 }
 
 #projects .card .code-btn {
-    border: 1px solid var(--blue);
-    font-size: 1.8rem;
-    background-color: #fff;
-    color: var(--blue);
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 1.2rem;
-    margin-left: 2rem;
+	border: 1px solid var(--blue);
+	font-size: 1.8rem;
+	background-color: #fff;
+	color: var(--blue);
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-radius: 1.2rem;
+	margin-left: 2rem;
 }
 
 #projects .card .demo-btn:hover,
 #projects .card .demo-btn:focus,
 #projects .card .code-btn:hover,
 #projects .card .code-btn:focus {
-    cursor: pointer;
-    opacity: 0.7;
+	cursor: pointer;
+	opacity: 0.7;
 }
 
 #projects .next-btn {
-    position: absolute;
-    top: 50%;
-    font-size: 3rem;
-    right: -2rem;
-    background-color: rgba(255, 255, 255, .5);
-    color: var(--gray-1);
-    transition: transform 350ms ease-out;
+	position: absolute;
+	top: 50%;
+	font-size: 3rem;
+	right: -2rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: var(--gray-1);
+	transition: transform 350ms ease-out;
 }
 
 #projects .prev-btn {
-    color: var(--gray-1);
-    background-color: rgba(255, 255, 255, .5);
-    position: absolute;
-    top: 50%;
-    font-size: 3rem;
-    left: -2rem;
-    transition: transform 350ms ease-out;
+	color: var(--gray-1);
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 50%;
+	font-size: 3rem;
+	left: -2rem;
+	transition: transform 350ms ease-out;
 }
 
 #projects .next-btn:hover,
 #projects .next-btn:focus {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .9);
-    transform: translateX(.3rem);
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateX(0.3rem);
 }
 
 #projects .prev-btn:hover,
 #projects .prev-btn:focus {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .9);
-    transform: translateX(-.3rem);
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateX(-0.3rem);
 }
 
 footer {
-    text-align: center;
-    color: #828282;
+	text-align: center;
+	color: #828282;
 }
 
 footer a {
-    font-weight: bold;
-    color: inherit;
+	font-weight: bold;
+	color: inherit;
 }
+
+@media (min-width: 992px) {
+	body {
+		padding: 3rem 10rem;
+	}
+	#about {
+		display: flex;
+	}
+	#about img {
+		width: 20%;
+		min-height: max-content;
+		margin: 0;
+		display: block;
+	}
+	#about .intro {
+		margin-bottom: 0;
+	}
+	#about .grid-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 15rem fit-content(100%);
+		padding-left: 4rem;
+		width: 100%;
+		font-size: 120%;
+	}
+	#about .grid-container .contact {
+		padding-left: 0;
+	}
+
+	#about .grid-container .info {
+		grid-column: span 2;
+	}
+	main > .grid-container {
+		display: grid;
+		grid-template-columns: fit-content(100%) fit-content(100%);
+		grid-template-rows: fit-content(100%) fit-content(100%) fit-content(
+				100%
+			);
+		gap: 2rem;
+	}
+	#blogs {
+		grid-row: span 2;
+	}
+
+	#hobbies {
+		grid-row: span 2;
+	}
+}
+
+/* @media (min-width: 600px) {
+	#about img {
+		width: 30%;
+		margin: 0;
+	}
+} */

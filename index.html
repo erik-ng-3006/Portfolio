@@ -1,175 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+		<!--Javascript-->
+		<script src="app.js" defer></script>
+	</head>
 
-    <!--Javascript-->
-    <script src="app.js" defer></script>
-</head>
+	<body>
+		<main>
+			<section id="about">
+				<img
+					src="assets/profile-picture.jpg"
+					alt="profile picture"
+					width="300px"
+				/>
+				<div class="grid-container">
+					<div class="intro">
+						<h1>Erik Nguyen</h1>
+						<p>Front-end developer</p>
+					</div>
+					<div class="contact">
+						<div>
+							<span class="material-icons">email</span>
+							erikng3006@gmail.com
+						</div>
+						<div>
+							<span class="material-icons">phone</span> (+420) 602
+							889 073
+						</div>
+					</div>
+					<div class="info">
+						<p>
+							Self-taught developer, who is willing to learn and
+							create outstanding UI applications.
+						</p>
+						<p>A minimalist who love learning languages.</p>
+					</div>
+				</div>
+			</section>
+			<div class="grid-container">
+				<section id="skills">
+					<h2>Front end</h2>
+					<div class="row">
+						<h3>React</h3>
+						<div class="experience-bar bar-1"></div>
+					</div>
+					<div class="row">
+						<h3>Javacript</h3>
+						<div class="experience-bar bar-2"></div>
+					</div>
+					<div class="row">
+						<h3>CSS</h3>
+						<div class="experience-bar bar-3"></div>
+					</div>
+					<div class="row">
+						<h3>Vue</h3>
+						<div class="experience-bar bar-4"></div>
+					</div>
+					<div class="row">
+						<h3>Redux</h3>
+						<div class="experience-bar bar-5"></div>
+					</div>
+					<div class="row">
+						<h3>React Native</h3>
+						<div class="experience-bar bar-6"></div>
+					</div>
+				</section>
+				<section id="blogs">
+					<h2>Blog</h2>
+					<div class="blog">
+						<h3>How to organize your CSS</h3>
+						<img
+							src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+							alt="blog image"
+						/>
+						<p>
+							In this article I tell the story about Proin eu
+							justo sit amet lacus bibendum tincidunt. Vivamus non
+							volutpat nisl, a luctus mi.
+						</p>
+						<p>
+							Donec aliquam est dui, vel vestibulum diam
+							sollicitudin id. Quisque feugiat malesuada molestie.
+						</p>
+						<a href="dev.to">dev.to</a>
+					</div>
+					<div class="blog">
+						<h3>
+							10 Must-Know Patterns for Writing Clean Code with
+							React and TypeScript
+						</h3>
+						<img
+							src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+							alt="blog image"
+						/>
+						<p>
+							In this article I tell the story about Proin eu
+							justo sit amet lacus bibendum tincidunt. Vivamus non
+							volutpat nisl, a luctus mi.
+						</p>
+						<p>
+							Donec aliquam est dui, vel vestibulum diam
+							sollicitudin id. Quisque feugiat malesuada molestie.
+						</p>
+						<a href="dev.to">dev.to</a>
+					</div>
+				</section>
 
-<body>
-    <main>
-        <section id="about">
-            <img src="assets/profile-picture.jpg" alt="profile picture" width="300px">
-            <div class="intro">
-                <h1>Erik Nguyen</h1>
-                <p>Front-end developer</p>
-            </div>
-            <div class="contact">
-                <div>
-                    <span class="material-icons">email</span> erikng3006@gmail.com
-                </div>
-                <div>
-                    <span class="material-icons">phone</span> (+420) 602 889 073
-                </div>
-            </div>
-            <div class="info">
-                <p>Self-taught developer, who is willing to learn and create outstanding UI applications. </p>
-                <p>A minimalist who love learning languages.</p>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Front end</h2>
-            <div class="row">
-                <h3>React</h3>
-                <div class="experience-bar bar-1"></div>
-            </div>
-            <div class="row">
-                <h3>Javacript</h3>
-                <div class="experience-bar bar-2"></div>
-            </div>
-            <div class="row">
-                <h3>CSS</h3>
-                <div class="experience-bar bar-3"></div>
-            </div>
-            <div class="row">
-                <h3>Vue</h3>
-                <div class="experience-bar bar-4"></div>
-            </div>
-            <div class="row">
-                <h3>Redux</h3>
-                <div class="experience-bar bar-5"></div>
-            </div>
-            <div class="row">
-                <h3>React Native</h3>
-                <div class="experience-bar bar-6"></div>
-            </div>
-        </section>
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <div class="hobby-1">
-                <img class="img" src="assets/reading-image.jpg" alt="">
-                <h3>Reading</h3>
-                <p>"The more that you read, the more things you will know. The more that you learn, the more places that you'll go."</p>
-            </div>
-            <div class="hobby-2">
-                <img class="img" src="assets/running-image.jpg" alt="">
-                <h3>Running</h3>
-                <p>"There is no failure in running, or in life as long as you keep moving."</p>
-            </div>
-            <div class="hobby-3">
-                <img class="img" src="assets/languages-learning-image.jpg" alt="">
-                <h3>Languages learning</h3>
-                <p>"Kolik jazyků umíš, tolikrát jsi člověkem"<br><span>-As many languages you know, as many times you are a human being</span></p>
-            </div>
-        </section>
-        <section id="projects" data-carousel>
-            <div class="carousel" data-slides>
-                <div class="card" data-active="true">
-                    <img src="assets/404-page-screenshot.png" alt="">
-                    <div class="tags">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                    </div>
-                    <h2>404 Page</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://awesome-keller-d0b93a.netlify.app/">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/404-not-found">Code</a>
-                </div>
-                <div class="card">
-                    <img src="assets/my-team-page-screenshot.png" alt="">
-                    <div class="tags">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                    </div>
-                    <h2>My team page</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" target="_blank" href="https://dazzling-poincare-0f66c4.netlify.app/">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/my-team-page">Code</a>
-                </div>
-                <div class="card">
-                    <img src="assets/interior-consultant-screenshot.png" alt="">
-                    <div class="tags ">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                        <div class="tag">#Javascript</div>
-                    </div>
-                    <h2>Interior consultant</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://brave-bose-284023.netlify.app/ ">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/interior-consultant ">Code</a>
-                </div>
-                <div class="card ">
-                    <img src="assets/recipe-page-screenshot.png" alt=" ">
-                    <div class="tags ">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                    </div>
-                    <h2>Recipe page</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://nostalgic-mahavira-3e4799.netlify.app/">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/recipe-page">Code</a>
-                </div>
-                <div class="card">
-                    <img src="assets/my-gallery.png" alt=" ">
-                    <div class="tags ">
-                        <div class="tag">#HTML</div>
-                        <div class="tag ">#CSS</div>
-                    </div>
-                    <h2>My gallery</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://awesome-hermann-e34889.netlify.app/">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/my-gallery">Code</a>
-                </div>
-                <div class="card">
-                    <img src="assets/checkout-page-screenshot.png" alt=" ">
-                    <div class="tags ">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                        <div class="tag">#Javascript</div>
-                    </div>
-                    <h2>Checkout page</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://modest-darwin-bc9c38.netlify.app/#">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/checkout-page">Code</a>
-                </div>
-                <div class="card">
-                    <img src="assets/edie-page-screenshot.png" alt=" ">
-                    <div class="tags">
-                        <div class="tag">#HTML</div>
-                        <div class="tag">#CSS</div>
-                        <div class="tag">#Javascript</div>
-                    </div>
-                    <h2>Edie home page</h2>
-                    <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-                    <a target="_blank" class="demo-btn" href="https://unruffled-raman-403160.netlify.app/">Demo</a>
-                    <a target="_blank" class="code-btn" href="https://github.com/erik-ng-3006/edie-home-page">Code</a>
-                </div>
-            </div>
-            <span class="material-icons next-btn" data-carousel-button="next">navigate_next</span>
-            <span class="material-icons prev-btn" data-carousel-button="prev">navigate_before</span>
-        </section>
-    </main>
-    <footer>created by <a href="https://github.com/erik-ng-3006 ">erik-ng-3006</a> - devChallenges.io</footer>
-
-
-</body>
-
+				<section id="hobbies">
+					<h2>Hobbies</h2>
+					<div class="hobby-1">
+						<img
+							class="img"
+							src="assets/reading-image.jpg"
+							alt=""
+						/>
+						<h3>Reading</h3>
+						<p>
+							"The more that you read, the more things you will
+							know. The more that you learn, the more places that
+							you'll go."
+						</p>
+					</div>
+					<div class="hobby-2">
+						<img
+							class="img"
+							src="assets/running-image.jpg"
+							alt=""
+						/>
+						<h3>Running</h3>
+						<p>
+							"There is no failure in running, or in life as long
+							as you keep moving."
+						</p>
+					</div>
+					<div class="hobby-3">
+						<img
+							class="img"
+							src="assets/languages-learning-image.jpg"
+							alt=""
+						/>
+						<h3>Languages learning</h3>
+						<p>
+							"Kolik jazyků umíš, tolikrát jsi člověkem"<br /><span
+								>-As many languages you know, as many times you
+								are a human being</span
+							>
+						</p>
+					</div>
+				</section>
+				<section id="experiences">
+					<h2>Experiences</h2>
+					<div class="grid-container">
+						<img
+							src="data:image/png;base64,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"
+							alt=""
+							width="100"
+						/>
+						<h4>Feb 2017 - Current</h4>
+						<h3>Front-end developer</h3>
+						<p>
+							Donec aliquam est dui, vel vestibulum diam
+							sollicitudin id. Quisque feugiat malesuada molestie.
+						</p>
+					</div>
+					<div class="grid-container">
+						<img
+							src="data:image/png;base64,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"
+							alt=""
+							width="100"
+						/>
+						<h4>Aug 2016 - Feb 2018</h4>
+						<h3>Full-stack developer</h3>
+						<p>
+							Donec aliquam est dui, vel vestibulum diam
+							sollicitudin id. Quisque feugiat malesuada molestie.
+						</p>
+					</div>
+				</section>
+			</div>
+			<section id="project-tags">
+				<h2>Projects (3)</h2>
+				<a href="#">HTML</a>
+				<a href="#">CSS</a>
+				<a href="#" active>Responsive</a>
+			</section>
+			<section id="projects" data-carousel>
+				<div class="carousel" data-slides>
+					<div class="card" data-active="true">
+						<img src="assets/404-page-screenshot.png" alt="" />
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+						</div>
+						<h2>404 Page</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://awesome-keller-d0b93a.netlify.app/"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/404-not-found"
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img src="assets/my-team-page-screenshot.png" alt="" />
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+						</div>
+						<h2>My team page</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							target="_blank"
+							href="https://dazzling-poincare-0f66c4.netlify.app/"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/my-team-page"
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img
+							src="assets/interior-consultant-screenshot.png"
+							alt=""
+						/>
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+							<div class="tag">#Javascript</div>
+						</div>
+						<h2>Interior consultant</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://brave-bose-284023.netlify.app/ "
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/interior-consultant "
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img src="assets/recipe-page-screenshot.png" alt=" " />
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+						</div>
+						<h2>Recipe page</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://nostalgic-mahavira-3e4799.netlify.app/"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/recipe-page"
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img src="assets/my-gallery.png" alt=" " />
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+						</div>
+						<h2>My gallery</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://awesome-hermann-e34889.netlify.app/"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/my-gallery"
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img
+							src="assets/checkout-page-screenshot.png"
+							alt=" "
+						/>
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+							<div class="tag">#Javascript</div>
+						</div>
+						<h2>Checkout page</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://modest-darwin-bc9c38.netlify.app/#"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/checkout-page"
+							>Code</a
+						>
+					</div>
+					<div class="card">
+						<img src="assets/edie-page-screenshot.png" alt=" " />
+						<div class="tags">
+							<div class="tag">#HTML</div>
+							<div class="tag">#CSS</div>
+							<div class="tag">#Javascript</div>
+						</div>
+						<h2>Edie home page</h2>
+						<p>
+							In this project, I work with HTML and CSS to create
+							a responsive page. This page is similiar with a
+							page. The design is from devchallenge.io
+						</p>
+						<a
+							target="_blank"
+							class="demo-btn"
+							href="https://unruffled-raman-403160.netlify.app/"
+							>Demo</a
+						>
+						<a
+							target="_blank"
+							class="code-btn"
+							href="https://github.com/erik-ng-3006/edie-home-page"
+							>Code</a
+						>
+					</div>
+				</div>
+				<span
+					class="material-icons next-btn"
+					data-carousel-button="next"
+					>navigate_next</span
+				>
+				<span
+					class="material-icons prev-btn"
+					data-carousel-button="prev"
+					>navigate_before</span
+				>
+			</section>
+		</main>
+		<footer>
+			created by
+			<a href="https://github.com/erik-ng-3006 ">erik-ng-3006</a> -
+			devChallenges.io
+		</footer>
+	</body>
 </html>
