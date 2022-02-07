@@ -199,6 +199,7 @@ body {
 #experiences img {
 	grid-row: span 3;
 	margin-right: 2rem;
+	object-fit: cover;
 }
 
 #experiences h3 {
