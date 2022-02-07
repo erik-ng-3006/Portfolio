@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/erik-ng-3006/portfolio/blob/main/assets/screenshot%20image.png)
+![screenshot](https://github.com/erik-ng-3006/portfolio/blob/main/assets/Screenshot%202022-02-07%20at%209.50.51.png)
 
 ### Built With
 
